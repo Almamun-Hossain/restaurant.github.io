@@ -1,0 +1,103 @@
+<!DICTYPE html>
+    <html>
+
+    <head>
+        <meta http-equiv="content-type" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Restuarent,USA POPULAT FOOD">
+        <title>Wellcome To Food Cafe</title>
+        <link rel="icon" href="image/table.png">
+        <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h1 class="logo"><a href="index.html"><img src="image/table.png"><span>Food Cafe</span> </a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="restuarent.html">Restaurent</a></li>
+                        <li><a href="food.html">Food</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="account.html">Join US</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="two-side-container">
+                <div class="res-menu">
+                    <ul>
+                        <li class="tabmenu" onclick="openTab('tab-restuarant')">Restuarant</li>
+                        <li class="tabmenu" onclick="openTab('tab-menu')">Food Menu</li>
+                    </ul>
+                </div>
+
+                <div class="tab-holder">
+
+                    <div class="tabitem" id="tab-restuarant">
+
+                        <div class="res-details">
+                            <h4>Read our story</h4>
+                            <h2>We've been Making The Delicious Foods Since 1999</h2>
+                            <p>Fusce hendrerit malesuada lacinia. Donec semper semper sem vitae malesuada. Proin scelerisque risus et ipsum semper molestie sed in nisi. Ut rhoncus congue lectus, rhoncus venenatis leo malesuada id.</p>
+                            <p>Sed elementum vel felis sed scelerisque. In arcu diam, sollicitudin eu nibh ac, posuere tristique magna. You can use this template for your cafe or restaurant website. Please tell your friends about <a href="https://plus.google.com/+templatemo" target="_parent">templatemo</a>. Thank you.</p>
+                        </div>
+                        <div class="image">
+                            <img src="image/about-image.jpg">
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="tabitem" id="tab-menu">
+                        <h1>Mneu Tab</h1>
+                        
+
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="footer">
+            <div class="f-info">
+                <h1>Toll Free: 1-877-971-9599</h1>
+                <span><a href="#">Powered</a> by social online market</span>
+            </div>
+            <div class="f-info">
+                <h1>Follow Us!</h1>
+                <ul>
+                    <li><a href="#"><img src="image/social/facebook.svg"></a></li>
+                    <li><a href="#"><img src="image/social/twitter.svg"></a></li>
+                    <li><a href="#"><img src="image/social/google-plus.svg"></a></li>
+                    <li><a href="#"><img src="image/social/youtube.svg"></a></li>
+                </ul>
+            </div>
+        </div>
+            
+            
+        </div>
+
+
+        <script>
+            function openTab(tabId) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("tabitem");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tabmenu");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className;
+                }
+                document.getElementById(tabId).style.display = "grid";
+            }
+        </script>
+    </body>
+
+    </html>
